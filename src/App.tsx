@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const a: number = 1;
+  const b: number = 2;
+  let sum: number = 0;
+
+  sum = a + b;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="CalcField">{sum}</div>
+      <div className="info">Vidareutveckla applikationen så att den blir en enkel miniräknare med siffror och några räknesätt.</div>
     </div>
   );
 }
