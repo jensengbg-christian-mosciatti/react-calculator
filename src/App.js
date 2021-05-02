@@ -15,7 +15,7 @@ function App() {
         keyPress(event.key)
         // memoKeyPress(event.key)
       }),
-    []
+    [keyPress]
   )
 
   return (
