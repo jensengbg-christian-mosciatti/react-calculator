@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  max-width: 20em;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.4em;
+  border: 2px solid rgb(124, 76, 76);
+  border-radius: 0.4em;
+  background: linear-gradient(80deg, #da627d, #da778c);
+  box-shadow: 10px 10px 23px 0px rgba(124, 76, 76, 0.38);
 }
 
 .App-header {
@@ -15,7 +24,8 @@
 
 .CalcField {
   box-sizing: border-box;
-  background-color: #e3e3e3;
+  /* background-color: #e3e3e3; */
+  background: linear-gradient(to right, rgb(192, 192, 192), rgb(227, 227, 227));
   border: 3px solid #666;
   border-radius: 4px;
   height: 54px;
@@ -26,6 +36,19 @@
   padding: 6px 10px;
   text-align: right;
   line-height: 36px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+.CalcField::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+/* Add a thumb */
+.CalcField::-webkit-scrollbar-thumb {
+  background: rgb(83, 83, 83);
 }
 
 .info {
@@ -43,4 +66,8 @@
   color: #61dafb;
 }
 
-
+.text-outside {
+  text-align: center;
+  padding: 1em;
+  text-shadow: 2px 2px 10px #5d5d5d;
+}

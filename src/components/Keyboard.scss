@@ -1,0 +1,16 @@
+.keyboard-area {
+  margin: 0.8em;
+  display: grid;
+  grid-row-gap: 0.4em;
+  grid-column-gap: 0.4em;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    'btn-canc btn-canc btn-del btn-div'
+    'btn-7 btn-8 btn-9 btn-mult'
+    'btn-4 btn-5 btn-6 btn-minus'
+    'btn-1 btn-2 btn-3 btn-plus'
+    'btn-comma btn-0 btn-plumin btn-eq';
+}
