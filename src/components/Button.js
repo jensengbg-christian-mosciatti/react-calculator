@@ -12,7 +12,7 @@ const Button = React.memo(({ btn, saveRef, keyboardId }) => {
 
   useEffect(() => {
     saveRef(keyboardId, thisButton)
-  }, [keyboardId, thisButton])
+  }, [keyboardId, thisButton, saveRef])
 
   return (
     <button

@@ -1,4 +1,4 @@
-import { useReducer } from 'react'
+import { useCallback, useReducer } from 'react'
 import reducer from './reducer'
 
 function useDataManager() {
@@ -71,9 +71,13 @@ function useDataManager() {
     keyboard[index].ref.current.click()
   }
 
-  function addButtonRef(btnId, btnRef) {
+  // function addButtonRef(btnId, btnRef) {
+  //   dispatch({ type: 'addButtonRef', btnId, btnRef })
+  // }
+
+  const addButtonRef = useCallback((btnId, btnRef) => {
     dispatch({ type: 'addButtonRef', btnId, btnRef })
-  }
+  }, [])
 
   function addNumber(numb) {
     dispatch({ type: 'addNumber', number: numb })
